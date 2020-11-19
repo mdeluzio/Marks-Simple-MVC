@@ -59,5 +59,10 @@
 
             $this->stmt->bindValue($param, $value, $type);
         }
+
+        // Execute the Prepared Statement
+        public function execute(){
+            return $this->stmt->execute();
+        }
         
     }
