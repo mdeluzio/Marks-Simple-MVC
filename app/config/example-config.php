@@ -4,7 +4,7 @@
     */
     
     //DB Params
-    define('DB_HOST', 'local'); // Database Host
+    define('DB_HOST', 'localhost'); // Database Host
     define('DB_USER', 'enter_user_here'); // Database User
     define('DB_PASS', 'enter_password_here'); // Database Password 
     define('DB_NAME', 'm-mvc'); // Database Name
