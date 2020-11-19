@@ -61,8 +61,14 @@
         }
 
         // Execute the Prepared Statement
-        public function execute(){
+        public function executeStatement(){
             return $this->stmt->execute();
+        }
+
+        // Get Result Set as Array of Objects
+        public function resultSet(){
+            $this->executeStatement();
+            return $this->stmt->fetchAll(PDO::FETCH_OBJ);
         }
         
     }
